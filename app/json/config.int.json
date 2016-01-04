@@ -7,6 +7,7 @@
   "corbel.scopes": "scopes",
   "corbel.userScopes": "scopes",
   "corbel.audience": "http://iam.corbel.io",
+  "iamEndpoint": "http://iam.corbel.io",
   "lang": "en",
   "debug": true,
 
