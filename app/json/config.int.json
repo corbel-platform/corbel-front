@@ -1,0 +1,14 @@
+{
+  "isProduction": false,
+  "corbel.urlBase": "http://api-int.corbel-front.com/",
+  "corbel.clientId": "clientId",
+  "corbel.clientSecret": "secret",
+  "corbel.domain": "domain",
+  "corbel.scopes": "scopes",
+  "corbel.userScopes": "scopes",
+  "corbel.audience": "http://iam.corbel.io",
+  "lang": "en",
+  "debug": true,
+
+  "googleAnalyticsCode": "UA-XXXXXXXX-X"
+}
