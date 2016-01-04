@@ -1,0 +1,11 @@
+/**
+ * CUSTOM CONTENT STYLES
+ */
+
+.widget-domain {
+  &.widget-user-2 {
+    .widget-user-username, .widget-user-desc {
+      margin-left: 0;
+    }
+  }
+}

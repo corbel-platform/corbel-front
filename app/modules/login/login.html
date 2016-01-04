@@ -1,0 +1,53 @@
+<div class="hold-transition login-page">
+
+  <div class="login-box">
+    <div class="login-logo">
+      <span><b>corbel</b></span>
+    </div>
+
+    <div class="login-box-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+
+      <form id="login-form" name="loginform">
+
+        <div class="form-group has-feedback" ng-class="{'has-error': loginform.email.$invalid && loginform.email.$dirty}">
+          <input type="email" class="form-control" placeholder="Email" name="email" ng-model="vm.email" ng-change="vm.error = ''" required email>
+          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-feedback">
+          <input type="password" class="form-control" name="password" placeholder="Password" ng-model="vm.password" ng-change="vm.error = ''" required>
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xs-8">
+            <div class="checkbox icheck">
+              <label>
+                <input type="checkbox" icheck ng-model="vm.persistent"> Remember Me
+              </label>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <button type="submit" class="btn btn-primary btn-block btn-flat" ng-click="vm.login(vm.email, vm.password, vm.persistent)">Sign In</button>
+          </div>
+
+        </div>
+
+        <!-- ERRORS -->
+        <div class="alert alert-danger" role="alert" ng-show="vm.error || (loginform.$invalid && loginform.$submitted)">
+          <div ng-show="!loginform.$invalid && vm.error">{{vm.error}}</div>
+          <div ng-show="loginform.email.$error.required && loginform.email.$dirty" translate="form.email.error.required"></div>
+          <div ng-show="loginform.email.$error.email && loginform.email.$dirty" translate="form.email.error.email"></div>
+          <div ng-show="loginform.password.$error.required && loginform.password.$dirty" translate="form.password.error.required"></div>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

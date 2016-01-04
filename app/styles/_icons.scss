@@ -1,0 +1,31 @@
+// Set basic control properties
+[class^="icon-"], [class*=" icon-"] {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  fill: $text-color;
+  vertical-align: middle;
+  // Icon transparent
+  &.transparent {
+    @include opacity(.4);
+  }
+}
+
+.icon-rotate-horizontal {
+  @include scale(-1);
+}
+
+.icon-rotate-left {
+  @include rotate(-90deg);
+}
+
+.glyphicon {
+  &.glyphicon-animate-rotate {
+    &:before {
+      -webkit-animation: spin 1s infinite linear;
+      -moz-animation: spin 1s infinite linear;
+      -o-animation: spin 1s infinite linear;
+      animation: spin 1s infinite linear;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+*.DS_Store
+node_modules
+dist
+.tmp
+.coverage
+.sass-cache
+bower_components
+*.iml
+*.log
+
+# IDEs
+*.sublime-project
+*.sublime-workspace
+.idea

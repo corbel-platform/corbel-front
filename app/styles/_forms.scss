@@ -1,0 +1,13 @@
+/**
+ * FORMS CUSTOM STYLES
+ */
+
+label.required:after {
+  content: ' *';
+}
+
+.radio, .checkbox {
+  & label {
+    padding-left: 0;
+  }
+}
