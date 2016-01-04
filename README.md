@@ -1,13 +1,16 @@
-![Codeship Status for devialab/corbel-front](https://codeship.com/projects/projectid/status?branch=master)
+![Codeship](https://codeship.com/projects/1c362220-953e-0133-5f34-4a53072d6648/status?branch=master)
 
+## corbel-front
 
-# Project Management
+Admin frontend for Corbel
+
+## Project Management
 
 * [CI](https://codeship.com/projects/125138)
 * [Chat](https://devialab.slack.com/messages/general/)
 
 
-# Installation
+## Installation
 
 ```
 gem install compass
@@ -17,7 +20,7 @@ webdriver-manager update
 ```
 
 
-# Run project
+## Run project
 
 * Dev mode
 	
@@ -31,7 +34,7 @@ webdriver-manager update
 	grunt serve:dist
 	```
 
-## Supported options
+### Supported options
 
   * **serverPort** (`9000`): Change server port.
   * **testPort** (`9001`): Change test port
@@ -42,14 +45,14 @@ webdriver-manager update
 	```
 
 
-# Build project
+## Build project
 
 ```
 grunt build
 ```
 
 
-# Set environment config
+## Set environment config
 
 Build/run project with specific environment config.
 
@@ -61,7 +64,7 @@ grunt serve --env prod
 ```
 
 
-# Run tests
+## Run tests
 
 * Unit
 
@@ -80,7 +83,7 @@ grunt serve --env prod
 	```
 
 
-# Release
+## Release
 
 ```
 grunt release:1.2.3
